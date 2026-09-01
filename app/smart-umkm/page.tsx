@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowLeft, ArrowRight, ShoppingBag, Store, Check, Minus } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
@@ -124,24 +125,19 @@ export default function SmartUMKMPage() {
               </p>
               <ul className="flex flex-col gap-3 font-medium text-on-surface pl-4 border-l border-outline/20">
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#00897B] text-sm">remove</span> Menemukan produk yang
-                  pernah ditawarkan
+                  <Minus className="w-4 h-4 text-[#00897B]" /> Menemukan produk yang pernah ditawarkan
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#00897B] text-sm">remove</span> Mengetahui produk apa
-                  saja yang sedang tersedia
+                  <Minus className="w-4 h-4 text-[#00897B]" /> Mengetahui produk apa saja yang sedang tersedia
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#00897B] text-sm">remove</span> Membedakan produk yang
-                  masih dijual dan sudah terjual
+                  <Minus className="w-4 h-4 text-[#00897B]" /> Membedakan produk yang masih dijual dan sudah terjual
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#00897B] text-sm">remove</span> Mencari penjual atau
-                  produk tertentu
+                  <Minus className="w-4 h-4 text-[#00897B]" /> Mencari penjual atau produk tertentu
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#00897B] text-sm">remove</span> Melihat informasi
-                  produk secara terstruktur
+                  <Minus className="w-4 h-4 text-[#00897B]" /> Melihat informasi produk secara terstruktur
                 </li>
               </ul>
               <p>Akibatnya, informasi jual-beli mudah tertimbun oleh percakapan lainnya.</p>
@@ -229,7 +225,7 @@ export default function SmartUMKMPage() {
             {/* Buyer Card */}
             <div className="border border-outline/20 p-8 bg-surface flex flex-col gap-6">
               <div className="flex items-center gap-3 border-b border-outline/10 pb-4">
-                <span className="material-symbols-outlined text-[#00897B] text-3xl">shopping_bag</span>
+                <ShoppingBag className="w-8 h-8 text-[#00897B]" />
                 <div>
                   <h3 className="font-headline-md text-2xl font-bold text-on-surface">Resident / Buyer</h3>
                   <span className="text-xs text-outline font-mono-label uppercase">Warga Pembeli</span>
@@ -242,23 +238,19 @@ export default function SmartUMKMPage() {
                 <span className="font-bold text-xs uppercase text-outline font-mono-label">Kebutuhan Utama:</span>
                 <ul className="flex flex-col gap-2 text-sm text-on-surface">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Melihat produk yang
-                    tersedia
+                    <Check className="w-4 h-4 text-[#00897B]" /> Melihat produk yang tersedia
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Mencari produk spesifik
+                    <Check className="w-4 h-4 text-[#00897B]" /> Mencari produk spesifik
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Melihat detail
-                    informasi produk
+                    <Check className="w-4 h-4 text-[#00897B]" /> Melihat detail informasi produk
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Mengetahui status
-                    ketersediaan produk
+                    <Check className="w-4 h-4 text-[#00897B]" /> Mengetahui status ketersediaan produk
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Menemukan kontak
-                    penjual
+                    <Check className="w-4 h-4 text-[#00897B]" /> Menemukan kontak penjual
                   </li>
                 </ul>
               </div>
@@ -267,7 +259,7 @@ export default function SmartUMKMPage() {
             {/* Seller Card */}
             <div className="border border-outline/20 p-8 bg-surface flex flex-col gap-6">
               <div className="flex items-center gap-3 border-b border-outline/10 pb-4">
-                <span className="material-symbols-outlined text-[#00897B] text-3xl">storefront</span>
+                <Store className="w-8 h-8 text-[#00897B]" />
                 <div>
                   <h3 className="font-headline-md text-2xl font-bold text-on-surface">Seller</h3>
                   <span className="text-xs text-outline font-mono-label uppercase">Warga Penjual (UMKM)</span>
@@ -280,20 +272,16 @@ export default function SmartUMKMPage() {
                 <span className="font-bold text-xs uppercase text-outline font-mono-label">Kebutuhan Utama:</span>
                 <ul className="flex flex-col gap-2 text-sm text-on-surface">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Menambahkan produk
-                    baru
+                    <Check className="w-4 h-4 text-[#00897B]" /> Menambahkan produk baru
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Menampilkan informasi
-                    produk secara lengkap
+                    <Check className="w-4 h-4 text-[#00897B]" /> Menampilkan informasi produk secara lengkap
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Mengubah status
-                    penjualan (Tersedia/Habis)
+                    <Check className="w-4 h-4 text-[#00897B]" /> Mengubah status penjualan (Tersedia/Habis)
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#00897B] text-xs">check</span> Mengelola daftar
-                    produk yang ditawarkan
+                    <Check className="w-4 h-4 text-[#00897B]" /> Mengelola daftar produk yang ditawarkan
                   </li>
                 </ul>
               </div>
@@ -321,19 +309,19 @@ export default function SmartUMKMPage() {
               <div className="p-4 border border-outline/20 bg-background rounded text-center text-sm font-semibold w-full md:w-auto">
                 Seller posts product
               </div>
-              <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+              <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
               <div className="p-4 border border-outline/20 bg-background rounded text-center text-sm font-semibold w-full md:w-auto">
                 Residents see message
               </div>
-              <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+              <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
               <div className="p-4 border border-outline/20 bg-background rounded text-center text-sm font-semibold w-full md:w-auto">
                 Messages continue to appear
               </div>
-              <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+              <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
               <div className="p-4 border border-outline/20 bg-background rounded text-center text-sm font-semibold w-full md:w-auto">
                 Product post gets buried
               </div>
-              <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+              <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
               <div className="p-4 border-2 border-red-500/40 bg-red-500/5 text-red-600 rounded text-center text-sm font-bold w-full md:w-auto">
                 Resident searches through chat
               </div>
@@ -381,8 +369,8 @@ export default function SmartUMKMPage() {
                 Struktur Pembeli (Buyer):
               </span>
               <div className="flex items-center gap-3 p-3 bg-background border border-outline/10 rounded font-semibold text-sm flex-wrap">
-                <span>Home</span> <span className="material-symbols-outlined text-[#00897B] text-sm">east</span>{" "}
-                <span>Product Catalog</span> <span className="material-symbols-outlined text-[#00897B] text-sm">east</span>{" "}
+                <span>Home</span> <ArrowRight className="w-4 h-4 text-[#00897B]" />{" "}
+                <span>Product Catalog</span> <ArrowRight className="w-4 h-4 text-[#00897B]" />{" "}
                 <span>Product Detail</span>
               </div>
             </div>
@@ -391,8 +379,8 @@ export default function SmartUMKMPage() {
                 Struktur Penjual (Seller):
               </span>
               <div className="flex items-center gap-3 p-3 bg-background border border-outline/10 rounded font-semibold text-sm flex-wrap">
-                <span>Seller Dashboard</span> <span className="material-symbols-outlined text-[#00897B] text-sm">east</span>{" "}
-                <span>My Products</span> <span className="material-symbols-outlined text-[#00897B] text-sm">east</span>{" "}
+                <span>Seller Dashboard</span> <ArrowRight className="w-4 h-4 text-[#00897B]" />{" "}
+                <span>My Products</span> <ArrowRight className="w-4 h-4 text-[#00897B]" />{" "}
                 <span>Add / Edit Product</span>
               </div>
             </div>
@@ -617,14 +605,13 @@ export default function SmartUMKMPage() {
             href="/student-service-hub"
             className="px-8 py-4 border border-on-surface text-on-surface text-label-caps font-label-caps uppercase tracking-wider hover:bg-on-surface hover:text-on-secondary transition-colors flex items-center gap-2"
           >
-            <span className="material-symbols-outlined text-sm">arrow_back</span> Proyek Sebelumnya: Student Service
-            Hub
+            <ArrowLeft className="w-4 h-4" /> Proyek Sebelumnya: Student Service Hub
           </Link>
           <Link
             href="/#works"
             className="px-8 py-4 bg-[#00897B] text-white text-label-caps font-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-surface transition-colors flex items-center gap-2"
           >
-            Kembali ke Portofolio <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            Kembali ke Portofolio <ArrowRight className="w-4 h-4" />
           </Link>
         </footer>
       </main>

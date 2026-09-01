@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  ArrowLeft,
+  ArrowRight,
+  PenTool,
+  LayoutDashboard,
+  Grid,
+  FileText,
+  BadgeCheck,
+  Bell,
+  User,
+  CheckCircle2,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
@@ -51,8 +63,8 @@ export default function StudentServiceHubPage() {
               <span className="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">
                 Tools
               </span>
-              <span className="font-semibold text-on-surface flex items-center gap-1">
-                <span className="material-symbols-outlined text-sm">draw</span> Figma
+              <span className="font-semibold text-on-surface flex items-center gap-1.5">
+                <PenTool className="w-3.5 h-3.5 text-[#1E88E5]" /> Figma
               </span>
             </div>
             <div className="col-span-2 md:col-span-1">
@@ -123,20 +135,16 @@ export default function StudentServiceHubPage() {
               </p>
               <ul className="flex flex-col gap-3 font-medium text-on-surface pl-4 border-l border-outline/20">
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#1E88E5] text-sm">arrow_right</span> Layanan apa yang
-                  mereka butuhkan
+                  <ArrowRight className="w-4 h-4 text-[#1E88E5]" /> Layanan apa yang mereka butuhkan
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#1E88E5] text-sm">arrow_right</span> Di mana
-                  menemukan informasi tersebut
+                  <ArrowRight className="w-4 h-4 text-[#1E88E5]" /> Di mana menemukan informasi tersebut
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#1E88E5] text-sm">arrow_right</span> Bagaimana
-                  prosedurnya
+                  <ArrowRight className="w-4 h-4 text-[#1E88E5]" /> Bagaimana prosedurnya
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#1E88E5] text-sm">arrow_right</span> Apa langkah
-                  selanjutnya yang harus dilakukan
+                  <ArrowRight className="w-4 h-4 text-[#1E88E5]" /> Apa langkah selanjutnya yang harus dilakukan
                 </li>
               </ul>
               <p>Masalah tersebut menjadi dasar untuk merancang pengalaman yang lebih sederhana dan terpusat.</p>
@@ -234,7 +242,7 @@ export default function StudentServiceHubPage() {
               <span className="font-bold text-on-surface">Need</span>
               <span className="text-xs text-outline">Kebutuhan Layanan</span>
             </div>
-            <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+            <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
             <div className="flex flex-col items-center text-center gap-2">
               <span className="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">
                 2
@@ -242,7 +250,7 @@ export default function StudentServiceHubPage() {
               <span className="font-bold text-on-surface">Search</span>
               <span className="text-xs text-outline">Pencarian Info</span>
             </div>
-            <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+            <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
             <div className="flex flex-col items-center text-center gap-2">
               <span className="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">
                 3
@@ -250,7 +258,7 @@ export default function StudentServiceHubPage() {
               <span className="font-bold text-on-surface">Understand</span>
               <span className="text-xs text-outline">Memahami Prosedur</span>
             </div>
-            <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+            <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
             <div className="flex flex-col items-center text-center gap-2">
               <span className="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">
                 4
@@ -258,7 +266,7 @@ export default function StudentServiceHubPage() {
               <span className="font-bold text-on-surface">Access</span>
               <span className="text-xs text-outline">Akses Layanan</span>
             </div>
-            <span className="material-symbols-outlined text-outline hidden md:block">east</span>
+            <ArrowRight className="w-4 h-4 text-outline hidden md:block" />
             <div className="flex flex-col items-center text-center gap-2">
               <span className="w-10 h-10 rounded-full bg-[#1E88E5] text-white font-bold flex items-center justify-center text-sm">
                 5
@@ -352,37 +360,37 @@ export default function StudentServiceHubPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 p-8 border border-outline/20 bg-surface">
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">dashboard</span>
+              <LayoutDashboard className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">Dashboard</h4>
               <span className="text-xs text-outline block mt-1">Ringkasan &amp; Status</span>
             </div>
 
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">grid_view</span>
+              <Grid className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">Services</h4>
               <span className="text-xs text-outline block mt-1">Katalog Layanan</span>
             </div>
 
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">description</span>
+              <FileText className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">Service Details</h4>
               <span className="text-xs text-outline block mt-1">Syarat &amp; Prosedur</span>
             </div>
 
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">badge</span>
+              <BadgeCheck className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">User Info</h4>
               <span className="text-xs text-outline block mt-1">Data Siswa</span>
             </div>
 
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">notifications</span>
+              <Bell className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">Notifications</h4>
               <span className="text-xs text-outline block mt-1">Update Status</span>
             </div>
 
             <div className="border border-[#1E88E5]/30 p-4 rounded text-center bg-[#1E88E5]/5">
-              <span className="material-symbols-outlined text-[#1E88E5] mb-2">account_circle</span>
+              <User className="w-6 h-6 text-[#1E88E5] mx-auto mb-2" />
               <h4 className="font-bold text-on-surface text-sm">Profile</h4>
               <span className="text-xs text-outline block mt-1">Akun &amp; Riwayat</span>
             </div>
@@ -413,19 +421,19 @@ export default function StudentServiceHubPage() {
             <div className="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
               Dashboard
             </div>
-            <span className="material-symbols-outlined text-[#1E88E5] hidden md:block">arrow_forward</span>
+            <ArrowRight className="w-4 h-4 text-[#1E88E5] hidden md:block" />
             <div className="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
               Services
             </div>
-            <span className="material-symbols-outlined text-[#1E88E5] hidden md:block">arrow_forward</span>
+            <ArrowRight className="w-4 h-4 text-[#1E88E5] hidden md:block" />
             <div className="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
               Select Service
             </div>
-            <span className="material-symbols-outlined text-[#1E88E5] hidden md:block">arrow_forward</span>
+            <ArrowRight className="w-4 h-4 text-[#1E88E5] hidden md:block" />
             <div className="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
               Service Details
             </div>
-            <span className="material-symbols-outlined text-[#1E88E5] hidden md:block">arrow_forward</span>
+            <ArrowRight className="w-4 h-4 text-[#1E88E5] hidden md:block" />
             <div className="px-6 py-4 border-2 border-[#1E88E5] bg-[#1E88E5]/10 rounded font-bold text-[#1E88E5] text-center w-full md:w-auto">
               Submit / Access Service
             </div>
@@ -642,31 +650,31 @@ export default function StudentServiceHubPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Memahami kebutuhan pengguna</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Menyusun user flow</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Membuat wireframe</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Merancang interface</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Menyusun design system</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Mengembangkan high-fidelity design</span>
             </div>
             <div className="flex items-center gap-3 p-4 border border-outline/20 bg-surface col-span-1 md:col-span-2">
-              <span className="material-symbols-outlined text-[#1E88E5]">check_circle</span>
+              <CheckCircle2 className="w-5 h-5 text-[#1E88E5]" />
               <span className="text-on-surface font-medium">Memastikan konsistensi visual antar halaman</span>
             </div>
           </div>
@@ -733,13 +741,13 @@ export default function StudentServiceHubPage() {
             href="/#works"
             className="px-8 py-4 border border-on-surface text-on-surface text-label-caps font-label-caps uppercase tracking-wider hover:bg-on-surface hover:text-on-secondary transition-colors flex items-center gap-2"
           >
-            <span className="material-symbols-outlined text-sm">arrow_back</span> Kembali ke Portofolio
+            <ArrowLeft className="w-4 h-4" /> Kembali ke Portofolio
           </Link>
           <Link
             href="/smart-umkm"
             className="px-8 py-4 bg-[#1E88E5] text-white text-label-caps font-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-surface transition-colors flex items-center gap-2"
           >
-            Proyek Selanjutnya: SmartUMKM <span className="material-symbols-outlined text-sm">arrow_forward</span>
+            Proyek Selanjutnya: SmartUMKM <ArrowRight className="w-4 h-4" />
           </Link>
         </footer>
       </main>

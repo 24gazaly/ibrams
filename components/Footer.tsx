@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,15 +17,15 @@ export default function Footer() {
           <span className="font-mono-label text-mono-label text-outline mb-2">Kontak</span>
           <a
             href="tel:08113086130"
-            className="text-on-surface-variant hover:text-primary transition-colors text-sm flex items-center gap-1"
+            className="text-on-surface-variant hover:text-primary transition-colors text-sm flex items-center gap-1.5"
           >
-            <span className="material-symbols-outlined text-xs">call</span> 08113086130
+            <Phone className="w-3.5 h-3.5" /> 08113086130
           </a>
           <a
             href="mailto:alghazalyibhram@gmail.com"
-            className="text-on-surface-variant hover:text-primary transition-colors text-sm flex items-center gap-1"
+            className="text-on-surface-variant hover:text-primary transition-colors text-sm flex items-center gap-1.5"
           >
-            <span className="material-symbols-outlined text-xs">mail</span> alghazalyibhram@gmail.com
+            <Mail className="w-3.5 h-3.5" /> alghazalyibhram@gmail.com
           </a>
         </div>
         <div className="flex flex-col gap-2">

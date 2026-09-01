@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -146,7 +147,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 text-on-surface font-label-caps text-label-caps uppercase hover:text-primary transition-colors border-b border-on-surface pb-1"
                   href="/student-service-hub"
                 >
-                  Baca Studi Kasus <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Baca Studi Kasus <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -166,7 +167,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 text-on-surface font-label-caps text-label-caps uppercase hover:text-primary transition-colors border-b border-on-surface pb-1"
                   href="/smart-umkm"
                 >
-                  Lihat Proyek <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  Lihat Proyek <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
               <div className="md:col-span-7 md:col-start-6">
@@ -205,7 +206,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary-container/50 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                  <span className="material-symbols-outlined">call</span>
+                  <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">
@@ -216,9 +217,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <span className="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">
-                arrow_forward
-              </span>
+              <ArrowRight className="w-5 h-5 text-outline group-hover:text-primary group-hover:translate-x-1 transition-all" />
             </a>
 
             {/* Email Card */}
@@ -228,7 +227,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary-container/50 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                  <span className="material-symbols-outlined">mail</span>
+                  <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">
@@ -239,9 +238,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <span className="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">
-                arrow_forward
-              </span>
+              <ArrowRight className="w-5 h-5 text-outline group-hover:text-primary group-hover:translate-x-1 transition-all" />
             </a>
           </div>
         </section>

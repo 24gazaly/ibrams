@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ArrowLeft, Menu, X } from "lucide-react";
 
 interface NavbarProps {
   isCaseStudy?: boolean;
@@ -25,7 +26,7 @@ export default function Navbar({
           className="inline-flex items-center gap-2 text-on-surface font-label-caps text-label-caps uppercase hover:text-primary transition-colors"
           href={backHref}
         >
-          <span className="material-symbols-outlined text-sm">arrow_back</span> {backLabel}
+          <ArrowLeft className="w-4 h-4" /> {backLabel}
         </Link>
         <span className="font-mono-label text-mono-label text-outline uppercase tracking-wider hidden md:inline-block">
           {categoryLabel}
@@ -70,9 +71,7 @@ export default function Navbar({
           aria-expanded={mobileMenuOpen}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          <span className="material-symbols-outlined" id="mobile-menu-icon">
-            {mobileMenuOpen ? "close" : "menu"}
-          </span>
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
 
@@ -80,7 +79,7 @@ export default function Navbar({
       {mobileMenuOpen && (
         <div
           id="mobile-menu"
-          className="flex md:hidden flex-col gap-4 px-gutter py-6 bg-surface border-b border-outline/10 animate-fadeIn"
+          className="flex md:hidden flex-col gap-4 px-gutter py-6 bg-surface border-b border-outline/10"
         >
           <Link
             className="text-on-surface-variant hover:text-primary transition-colors text-label-caps font-label-caps uppercase"
