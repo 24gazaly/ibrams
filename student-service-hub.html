@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Service Hub — Case Study | Alghazaly Ibhram Santoso</title>
+
+<!-- Tailwind (Play CDN) -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind theme config -->
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-fixed": "#bde9ff",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#f9f9f9",
+          "secondary-container": "#e2dfde",
+          "on-secondary-fixed-variant": "#474746",
+          "surface-container-low": "#f3f3f3",
+          "secondary-fixed-dim": "#c8c6c5",
+          "surface-container": "#eeeeee",
+          "background": "#f9f9f9",
+          "on-tertiary-container": "#606264",
+          "on-error": "#ffffff",
+          "on-surface": "#1a1c1c",
+          "primary-container": "#b9e5fb",
+          "surface-tint": "#396476",
+          "surface": "#f9f9f9",
+          "inverse-primary": "#a1cde2",
+          "on-tertiary": "#ffffff",
+          "tertiary": "#5d5e60",
+          "surface-container-high": "#e8e8e8",
+          "tertiary-fixed": "#e2e2e4",
+          "primary": "#1E88E5",
+          "on-secondary-fixed": "#1c1b1b",
+          "surface-dim": "#dadada",
+          "error-container": "#ffdad6",
+          "on-primary-fixed": "#001f2a",
+          "surface-variant": "#e2e2e2",
+          "on-error-container": "#93000a",
+          "primary-fixed-dim": "#a1cde2",
+          "surface-container-highest": "#e2e2e2",
+          "on-tertiary-fixed-variant": "#454749",
+          "on-background": "#1a1c1c",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed-variant": "#1e4c5e",
+          "secondary": "#5f5e5e",
+          "secondary-fixed": "#e5e2e1",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed": "#1a1c1d",
+          "on-primary-container": "#3c677a",
+          "inverse-on-surface": "#f1f1f1",
+          "tertiary-container": "#dedee0",
+          "on-secondary-container": "#636262",
+          "error": "#E53935",
+          "on-surface-variant": "#41484c",
+          "outline": "#71787c",
+          "tertiary-fixed-dim": "#c6c6c8",
+          "outline-variant": "#c1c7cc",
+          "inverse-surface": "#2f3131"
+        },
+        borderRadius: {
+          DEFAULT: "0.25rem",
+          lg: "0.5rem",
+          xl: "0.75rem",
+          full: "9999px"
+        },
+        spacing: {
+          "section-gap": "120px",
+          "container-max": "1200px",
+          gutter: "24px",
+          unit: "8px"
+        },
+        fontFamily: {
+          "body-lg": ["Inter"],
+          "headline-lg": ["Manrope"],
+          "mono-label": ["Inter"],
+          "body-md": ["Inter"],
+          "headline-md": ["Manrope"],
+          "display-xl": ["Manrope"],
+          "label-caps": ["Inter"]
+        }
+      }
+    }
+  };
+</script>
+
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-surface">
+
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-gutter py-4 bg-surface/90 backdrop-blur-md border-b border-outline/10">
+  <a class="inline-flex items-center gap-2 text-on-surface font-label-caps text-label-caps uppercase hover:text-primary transition-colors" href="index.html#works">
+    <span class="material-symbols-outlined text-sm">arrow_back</span> Kembali ke Portofolio
+  </a>
+  <span class="font-mono-label text-mono-label text-outline uppercase tracking-wider hidden md:inline-block">UI/UX Case Study</span>
+</nav>
+
+<main class="max-w-container-max mx-auto px-gutter relative py-12 flex flex-col gap-24">
+
+  <!-- 1. Hero Section -->
+  <header class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div class="flex flex-col gap-4">
+      <span class="font-mono-label text-mono-label text-primary uppercase tracking-widest border border-primary/20 bg-primary/5 px-3 py-1 w-max">Case Study 01</span>
+      <h1 class="font-display-xl text-5xl md:text-7xl text-on-surface font-extrabold tracking-tight">Student Service Hub</h1>
+      <p class="font-headline-md text-2xl md:text-3xl text-on-surface-variant max-w-3xl font-normal leading-relaxed">
+        One platform for a better student service experience
+      </p>
+    </div>
+
+    <!-- Metadata Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 border border-outline/20 bg-surface">
+      <div>
+        <span class="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">Role</span>
+        <span class="font-semibold text-on-surface">UI/UX Designer</span>
+      </div>
+      <div>
+        <span class="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">Project Type</span>
+        <span class="font-semibold text-on-surface">UI/UX Design — DTP Hipster</span>
+      </div>
+      <div>
+        <span class="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">Tools</span>
+        <span class="font-semibold text-on-surface flex items-center gap-1"><span class="material-symbols-outlined text-sm">draw</span> Figma</span>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <span class="font-mono-label text-mono-label text-outline block uppercase tracking-wider mb-1">Focus</span>
+        <span class="text-sm text-on-surface-variant font-medium">UX Research · User Flow · Wireframe · Design System · UI Design</span>
+      </div>
+    </div>
+
+    <!-- Hero Image Banner -->
+    <div class="w-full border border-outline/20 p-8 md:p-12 bg-surface/50 flex justify-center items-center">
+      <img src="image/ssh_mobile_ui.png" alt="Student Service Hub Mobile App Interface" class="max-w-xs md:max-w-sm w-full h-auto drop-shadow-2xl object-contain hover:scale-[1.02] transition-transform duration-500"/>
+    </div>
+  </header>
+
+  <!-- 2. Project Overview -->
+  <section class="reveal grid grid-cols-1 md:grid-cols-12 gap-gutter items-start border-b border-outline/10 pb-16">
+    <div class="md:col-span-4">
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">01 — Overview</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Tentang Proyek</h2>
+    </div>
+    <div class="md:col-span-8 flex flex-col gap-6 font-body-lg text-body-lg text-on-surface-variant">
+      <p>
+        <strong class="text-on-surface">Student Service Hub</strong> adalah konsep platform digital yang dirancang untuk membantu siswa mengakses berbagai layanan sekolah dalam satu tempat.
+      </p>
+      <p>
+        Dalam kondisi layanan yang tersebar, siswa membutuhkan cara yang lebih sederhana untuk menemukan informasi, memahami prosedur, dan mengakses layanan yang mereka butuhkan.
+      </p>
+      <p>
+        Melalui project ini, kami mengeksplorasi bagaimana sebuah platform digital dapat membuat pengalaman layanan siswa menjadi lebih terstruktur, mudah dipahami, dan nyaman digunakan.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. The Problem — typography besar -->
+  <section class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">02 — The Problem</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Tantangan Utama</h2>
+    </div>
+
+    <!-- Large Typography Statement -->
+    <blockquote class="font-headline-lg text-4xl md:text-6xl text-on-surface font-extrabold leading-tight border-l-4 border-primary pl-6 md:pl-10 my-4">
+      "Student services can be difficult to navigate."
+    </blockquote>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+      <div class="md:col-span-7 flex flex-col gap-6 text-body-lg text-on-surface-variant">
+        <p>
+          Berbagai kebutuhan siswa tidak selalu berada dalam satu alur yang jelas. Informasi dan layanan yang berbeda dapat membuat siswa harus mencari tahu sendiri:
+        </p>
+        <ul class="flex flex-col gap-3 font-medium text-on-surface pl-4 border-l border-outline/20">
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">arrow_right</span> Layanan apa yang mereka butuhkan</li>
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">arrow_right</span> Di mana menemukan informasi tersebut</li>
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">arrow_right</span> Bagaimana prosedurnya</li>
+          <li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">arrow_right</span> Apa langkah selanjutnya yang harus dilakukan</li>
+        </ul>
+        <p>
+          Masalah tersebut menjadi dasar untuk merancang pengalaman yang lebih sederhana dan terpusat.
+        </p>
+      </div>
+
+      <!-- Design Challenge Box -->
+      <div class="md:col-span-5 border-2 border-primary/40 bg-primary/5 p-8 flex flex-col gap-4">
+        <span class="font-mono-label text-mono-label text-primary uppercase font-bold tracking-widest">Our Design Challenge</span>
+        <p class="font-headline-md text-2xl text-on-surface font-semibold leading-snug">
+          How might we create a digital platform that makes student services easier to discover, understand, and access?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Goal -->
+  <section class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">03 — Goal</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Tujuan Perancangan</h2>
+      <p class="text-on-surface-variant text-lg mt-2">Tujuan utama project ini adalah membuat pengalaman layanan siswa yang:</p>
+    </div>
+
+    <!-- 4 Goal Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-4 hover:border-primary transition-colors">
+        <div class="w-10 h-10 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">01</div>
+        <h3 class="font-headline-md text-xl text-on-surface font-bold">Simple</h3>
+        <p class="text-on-surface-variant text-sm">Menyederhanakan proses pencarian layanan bagi seluruh siswa.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-4 hover:border-primary transition-colors">
+        <div class="w-10 h-10 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">02</div>
+        <h3 class="font-headline-md text-xl text-on-surface font-bold">Clear</h3>
+        <p class="text-on-surface-variant text-sm">Menyajikan informasi dengan struktur yang mudah dipahami tanpa kebingungan.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-4 hover:border-primary transition-colors">
+        <div class="w-10 h-10 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">03</div>
+        <h3 class="font-headline-md text-xl text-on-surface font-bold">Accessible</h3>
+        <p class="text-on-surface-variant text-sm">Memudahkan siswa menemukan dan mengajukan layanan yang mereka perlukan.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-4 hover:border-primary transition-colors">
+        <div class="w-10 h-10 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">04</div>
+        <h3 class="font-headline-md text-xl text-on-surface font-bold">Consistent</h3>
+        <p class="text-on-surface-variant text-sm">Menggunakan pola interface yang konsisten di seluruh bagian platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. User Research / Understanding the User -->
+  <section class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">04 — Understanding the User</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Memahami Pengguna</h2>
+    </div>
+
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+      Sebelum masuk ke visual design, proses dimulai dengan memahami kebutuhan dan perjalanan pengguna. Kami melihat pengalaman siswa ketika melewati 5 fase krusial:
+    </p>
+
+    <!-- Pipeline Visual -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-8 border border-outline/20 bg-surface">
+      <div class="flex flex-col items-center text-center gap-2">
+        <span class="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">1</span>
+        <span class="font-bold text-on-surface">Need</span>
+        <span class="text-xs text-outline">Kebutuhan Layanan</span>
+      </div>
+      <span class="material-symbols-outlined text-outline hidden md:block">east</span>
+      <div class="flex flex-col items-center text-center gap-2">
+        <span class="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">2</span>
+        <span class="font-bold text-on-surface">Search</span>
+        <span class="text-xs text-outline">Pencarian Info</span>
+      </div>
+      <span class="material-symbols-outlined text-outline hidden md:block">east</span>
+      <div class="flex flex-col items-center text-center gap-2">
+        <span class="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">3</span>
+        <span class="font-bold text-on-surface">Understand</span>
+        <span class="text-xs text-outline">Memahami Prosedur</span>
+      </div>
+      <span class="material-symbols-outlined text-outline hidden md:block">east</span>
+      <div class="flex flex-col items-center text-center gap-2">
+        <span class="w-10 h-10 rounded-full bg-on-surface text-on-secondary font-bold flex items-center justify-center text-sm">4</span>
+        <span class="font-bold text-on-surface">Access</span>
+        <span class="text-xs text-outline">Akses Layanan</span>
+      </div>
+      <span class="material-symbols-outlined text-outline hidden md:block">east</span>
+      <div class="flex flex-col items-center text-center gap-2">
+        <span class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-sm">5</span>
+        <span class="font-bold text-primary">Complete</span>
+        <span class="text-xs text-outline">Proses Selesai</span>
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant text-base">
+      Dari proses tersebut, kami mencoba menemukan bagian-bagian yang berpotensi membuat pengalaman pengguna menjadi kurang efektif dan memperbaikinya secara menyeluruh.
+    </p>
+  </section>
+
+  <!-- 6. Customer Journey Map — full width -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">05 — Customer Journey Map</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Peta Perjalanan Siswa (Customer Journey)</h2>
+      <p class="text-on-surface-variant text-base mt-2">Customer Journey Map digunakan untuk memetakan pengalaman siswa ketika berinteraksi dengan layanan sekolah.</p>
+    </div>
+
+    <!-- Full Width Journey Grid -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-5 gap-4">
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-3">
+        <span class="font-mono-label text-xs text-primary font-bold">TAHAP 01</span>
+        <h3 class="font-bold text-lg text-on-surface">01 — Need</h3>
+        <p class="text-sm text-on-surface-variant">Siswa memiliki kebutuhan spesifik atau ingin menggunakan suatu layanan sekolah.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-3">
+        <span class="font-mono-label text-xs text-primary font-bold">TAHAP 02</span>
+        <h3 class="font-bold text-lg text-on-surface">02 — Search</h3>
+        <p class="text-sm text-on-surface-variant">Siswa mencari informasi mengenai ketersediaan layanan dan lokasi pengajuannya.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-3">
+        <span class="font-mono-label text-xs text-primary font-bold">TAHAP 03</span>
+        <h3 class="font-bold text-lg text-on-surface">03 — Understand</h3>
+        <p class="text-sm text-on-surface-variant">Siswa mempelajari dan memahami persyaratan dokumen serta alur prosedur.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-3">
+        <span class="font-mono-label text-xs text-primary font-bold">TAHAP 04</span>
+        <h3 class="font-bold text-lg text-on-surface">04 — Access</h3>
+        <p class="text-sm text-on-surface-variant">Siswa mengakses dan mengisi formulir pengajuan layanan yang dibutuhkan.</p>
+      </div>
+
+      <div class="border border-outline/20 p-6 bg-surface flex flex-col gap-3 border-l-4 border-l-primary">
+        <span class="font-mono-label text-xs text-primary font-bold">TAHAP 05</span>
+        <h3 class="font-bold text-lg text-on-surface">05 — Complete</h3>
+        <p class="text-sm text-on-surface-variant">Siswa mendapatkan status pemrosesan hingga penyelesaian pengajuan layanan.</p>
+      </div>
+    </div>
+
+    <div class="p-6 bg-surface-container border border-outline/10 text-on-surface-variant text-sm">
+      <strong class="text-on-surface">Insight Utama:</strong> Insight dari journey ini kemudian digunakan sebagai dasar untuk menentukan struktur halaman dan alur pengalaman platform.
+    </div>
+  </section>
+
+  <!-- 7. Information Architecture -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">06 — Information Architecture</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Arsitektur Informasi</h2>
+      <p class="text-on-surface-variant text-base mt-2">Berdasarkan kebutuhan pengguna, informasi dalam platform disusun agar lebih mudah ditemukan.</p>
+    </div>
+
+    <!-- Sitemap Architecture Display -->
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 p-8 border border-outline/20 bg-surface">
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">dashboard</span>
+        <h4 class="font-bold text-on-surface text-sm">Dashboard</h4>
+        <span class="text-xs text-outline block mt-1">Ringkasan & Status</span>
+      </div>
+
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">grid_view</span>
+        <h4 class="font-bold text-on-surface text-sm">Services</h4>
+        <span class="text-xs text-outline block mt-1">Katalog Layanan</span>
+      </div>
+
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">description</span>
+        <h4 class="font-bold text-on-surface text-sm">Service Details</h4>
+        <span class="text-xs text-outline block mt-1">Syarat & Prosedur</span>
+      </div>
+
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">badge</span>
+        <h4 class="font-bold text-on-surface text-sm">User Info</h4>
+        <span class="text-xs text-outline block mt-1">Data Siswa</span>
+      </div>
+
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">notifications</span>
+        <h4 class="font-bold text-on-surface text-sm">Notifications</h4>
+        <span class="text-xs text-outline block mt-1">Update Status</span>
+      </div>
+
+      <div class="border border-primary/30 p-4 rounded text-center bg-primary/5">
+        <span class="material-symbols-outlined text-primary mb-2">account_circle</span>
+        <h4 class="font-bold text-on-surface text-sm">Profile</h4>
+        <span class="text-xs text-outline block mt-1">Akun & Riwayat</span>
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant text-base">
+      Tujuannya adalah mengurangi langkah yang tidak diperlukan dan membuat pengguna dapat memahami posisi mereka di dalam platform setiap saat.
+    </p>
+  </section>
+
+  <!-- 8. User Flow — full width -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">07 — User Flow</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Alur Pengguna (User Flow)</h2>
+      <p class="text-on-surface-variant text-base mt-2">User flow dibuat untuk menggambarkan bagaimana siswa berpindah dari satu tahap ke tahap berikutnya secara seamless.</p>
+    </div>
+
+    <!-- Full Width Flow Diagram -->
+    <div class="w-full p-8 border border-outline/20 bg-surface flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
+        Dashboard
+      </div>
+      <span class="material-symbols-outlined text-primary hidden md:block">arrow_forward</span>
+      <div class="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
+        Services
+      </div>
+      <span class="material-symbols-outlined text-primary hidden md:block">arrow_forward</span>
+      <div class="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
+        Select Service
+      </div>
+      <span class="material-symbols-outlined text-primary hidden md:block">arrow_forward</span>
+      <div class="px-6 py-4 border border-outline/30 bg-background rounded font-bold text-on-surface text-center w-full md:w-auto">
+        Service Details
+      </div>
+      <span class="material-symbols-outlined text-primary hidden md:block">arrow_forward</span>
+      <div class="px-6 py-4 border-2 border-primary bg-primary/10 rounded font-bold text-primary text-center w-full md:w-auto">
+        Submit / Access Service
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant text-base">
+      Dengan membuat user flow terlebih dahulu, desain interface dapat dibuat berdasarkan kebutuhan dan alur pengguna, bukan hanya sekadar estetika visual semata.
+    </p>
+  </section>
+
+  <!-- 9. Wireframe — gallery besar -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">08 — Wireframe</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Struktur Wireframe</h2>
+      <p class="text-on-surface-variant text-base mt-2">Setelah struktur dan user flow ditentukan, tahap berikutnya adalah membuat wireframe low-fidelity.</p>
+    </div>
+
+    <!-- Wireframe Image Display -->
+    <div class="border border-outline/20 p-8 md:p-12 bg-surface/50 flex justify-center items-center">
+      <img src="image/ssh_mobile_wireframe.png" alt="Wireframe Layout Student Service Hub Mobile" class="max-w-sm md:max-w-md w-full h-auto drop-shadow-2xl object-contain"/>
+    </div>
+
+    <!-- Wireframe Focus Points -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-2">
+      <div class="p-4 border border-outline/20 bg-surface text-center">
+        <span class="font-bold text-on-surface block text-sm mb-1">Hierarchy Informasi</span>
+        <span class="text-xs text-on-surface-variant">Urutan prioritas konten</span>
+      </div>
+      <div class="p-4 border border-outline/20 bg-surface text-center">
+        <span class="font-bold text-on-surface block text-sm mb-1">Posisi Navigasi</span>
+        <span class="text-xs text-on-surface-variant">Kemudahan perpindahan</span>
+      </div>
+      <div class="p-4 border border-outline/20 bg-surface text-center">
+        <span class="font-bold text-on-surface block text-sm mb-1">Struktur Halaman</span>
+        <span class="text-xs text-on-surface-variant">Tata letak komponen</span>
+      </div>
+      <div class="p-4 border border-outline/20 bg-surface text-center">
+        <span class="font-bold text-on-surface block text-sm mb-1">Penempatan CTA</span>
+        <span class="text-xs text-on-surface-variant">Titik interaksi utama</span>
+      </div>
+      <div class="p-4 border border-outline/20 bg-surface text-center col-span-2 md:col-span-1">
+        <span class="font-bold text-on-surface block text-sm mb-1">Hubungan Halaman</span>
+        <span class="text-xs text-on-surface-variant">Keterhubungan layar</span>
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant text-base">
+      Pada tahap ini, fokus utama bukan visual, tetapi bagaimana pengguna dapat menyelesaikan tugas (task) dengan efisien.
+    </p>
+  </section>
+
+  <!-- 10. Design System — showcase -->
+  <section class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">09 — Design System</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Design System Showcase</h2>
+      <p class="text-on-surface-variant text-base mt-2">Untuk menjaga konsistensi interface, dibuat sebuah design system yang menjadi dasar visual Student Service Hub.</p>
+    </div>
+
+    <!-- Color Palette Showcase -->
+    <div class="flex flex-col gap-4">
+      <h3 class="font-headline-md text-xl font-bold text-on-surface">Color Palette</h3>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div class="border border-outline/20 p-4 bg-surface flex flex-col gap-2">
+          <div class="h-16 w-full rounded bg-[#1E88E5]"></div>
+          <span class="font-bold text-sm text-on-surface">Primary</span>
+          <span class="font-mono-label text-xs text-outline">#1E88E5</span>
+        </div>
+        <div class="border border-outline/20 p-4 bg-surface flex flex-col gap-2">
+          <div class="h-16 w-full rounded bg-[#90CAF9]"></div>
+          <span class="font-bold text-sm text-on-surface">Secondary</span>
+          <span class="font-mono-label text-xs text-outline">#90CAF9</span>
+        </div>
+        <div class="border border-outline/20 p-4 bg-surface flex flex-col gap-2">
+          <div class="h-16 w-full rounded bg-[#4CAF50]"></div>
+          <span class="font-bold text-sm text-on-surface">Success</span>
+          <span class="font-mono-label text-xs text-outline">#4CAF50</span>
+        </div>
+        <div class="border border-outline/20 p-4 bg-surface flex flex-col gap-2">
+          <div class="h-16 w-full rounded bg-[#FB8C00]"></div>
+          <span class="font-bold text-sm text-on-surface">Warning</span>
+          <span class="font-mono-label text-xs text-outline">#FB8C00</span>
+        </div>
+        <div class="border border-outline/20 p-4 bg-surface flex flex-col gap-2 col-span-2 md:col-span-1">
+          <div class="h-16 w-full rounded bg-[#E53935]"></div>
+          <span class="font-bold text-sm text-on-surface">Error</span>
+          <span class="font-mono-label text-xs text-outline">#E53935</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography Showcase -->
+    <div class="flex flex-col gap-4">
+      <h3 class="font-headline-md text-xl font-bold text-on-surface">Typography</h3>
+      <div class="p-6 border border-outline/20 bg-surface flex flex-col gap-4">
+        <p class="text-xs text-outline uppercase font-mono-label">Clean & Readable Typography Scale (Inter & Manrope)</p>
+        <div class="flex flex-col gap-2 border-l-2 border-primary pl-4">
+          <span class="font-display-xl text-3xl font-extrabold text-on-surface">Heading 1 — Display Hero</span>
+          <span class="font-headline-md text-xl font-bold text-on-surface">Heading 2 — Section Header</span>
+          <span class="font-body-md text-base text-on-surface-variant">Body Text — Informasi detail dan instruksi layanan yang nyaman dibaca oleh siswa.</span>
+          <span class="font-label-caps text-xs uppercase tracking-wider font-semibold text-primary">Label & CTA Caps — Tombol Aksi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Components Showcase -->
+    <div class="flex flex-col gap-4">
+      <h3 class="font-headline-md text-xl font-bold text-on-surface">UI Components Library</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Button Component</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Input Field</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Service Card</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Navigation Component</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Status Indicator</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Form Layout</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Information Card</div>
+        <div class="p-4 border border-outline/20 bg-surface text-center font-semibold text-on-surface text-sm">Notification Badge</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Final Design — bagian PALING BESAR -->
+  <section class="reveal flex flex-col gap-12 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-primary uppercase tracking-widest border border-primary/20 bg-primary/5 px-3 py-1 w-max">10 &amp; 11 — High-Fidelity &amp; Final Design</span>
+      <h2 class="font-headline-lg text-4xl md:text-5xl text-on-surface mt-4 font-extrabold leading-tight">
+        A more structured student service experience.
+      </h2>
+      <p class="text-on-surface-variant text-lg mt-4 max-w-3xl">
+        Final interface Student Service Hub menggabungkan hasil research, customer journey, user flow, wireframe, dan design system menjadi satu pengalaman digital yang lebih terstruktur.
+      </p>
+    </div>
+
+    <!-- HUGE FINAL UI DISPLAY (bagian PALING BESAR) -->
+    <div class="w-full flex flex-col gap-6">
+      <div class="w-full border border-outline/20 p-8 md:p-16 bg-surface flex justify-center items-center">
+        <img src="image/ssh_mobile_ui.png" alt="Final High-Fidelity UI Student Service Hub Mobile" class="max-w-sm md:max-w-md w-full h-auto drop-shadow-2xl object-contain hover:scale-[1.02] transition-transform duration-500"/>
+      </div>
+      <!-- Caption -->
+      <p class="font-headline-md text-xl md:text-2xl text-center text-on-surface font-semibold italic border-l-4 border-r-4 border-primary/40 py-3 px-6 bg-surface">
+        "From research to interface — every screen was designed around the user's journey."
+      </p>
+    </div>
+  </section>
+
+  <!-- 12. My Contribution -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">12 — My Contribution</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">My role in the project</h2>
+    </div>
+
+    <p class="font-body-lg text-body-lg text-on-surface-variant">
+      Dalam project Student Service Hub, saya berkontribusi pada proses UI/UX dan pengembangan interface secara menyeluruh.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Memahami kebutuhan pengguna</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Menyusun user flow</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Membuat wireframe</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Merancang interface</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Menyusun design system</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Mengembangkan high-fidelity design</span>
+      </div>
+      <div class="flex items-center gap-3 p-4 border border-outline/20 bg-surface col-span-1 md:col-span-2">
+        <span class="material-symbols-outlined text-primary">check_circle</span>
+        <span class="text-on-surface font-medium">Memastikan konsistensi visual antar halaman</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. What I Learned -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">13 — What I Learned</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Pembelajaran Utama</h2>
+    </div>
+
+    <blockquote class="font-headline-lg text-3xl md:text-4xl text-on-surface font-extrabold leading-snug border-l-4 border-primary pl-6">
+      "Designing is more than making things look good."
+    </blockquote>
+
+    <div class="flex flex-col gap-6 text-body-lg text-on-surface-variant max-w-4xl">
+      <p>
+        Project ini membuat saya memahami bahwa proses UI/UX tidak berhenti pada membuat interface yang terlihat menarik semata.
+      </p>
+      <p>
+        Desain yang baik harus dimulai dari memahami masalah dan kebutuhan pengguna, kemudian diterjemahkan menjadi struktur, alur, dan interface yang dapat digunakan dengan mudah.
+      </p>
+      <p class="font-semibold text-on-surface">
+        Saya belajar bahwa setiap keputusan visual sebaiknya memiliki alasan yang jelas dan mendukung pengalaman pengguna secara nyata.
+      </p>
+    </div>
+  </section>
+
+  <!-- 14. Reflection -->
+  <section class="reveal flex flex-col gap-8 border-b border-outline/10 pb-16">
+    <div>
+      <span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">14 — Reflection</span>
+      <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface mt-2 font-bold">Refleksi Akhir</h2>
+    </div>
+
+    <h3 class="font-headline-md text-2xl font-bold text-primary">From problem to experience.</h3>
+
+    <div class="flex flex-col gap-6 text-body-lg text-on-surface-variant max-w-4xl">
+      <p>
+        Student Service Hub menjadi salah satu project yang membantu saya memahami proses UI/UX secara lebih menyeluruh. Mulai dari memahami masalah, memetakan perjalanan pengguna, membuat struktur dan wireframe, hingga menerjemahkannya menjadi high-fidelity interface.
+      </p>
+      <p>
+        Project ini memperkuat ketertarikan saya pada UI/UX Research dan Interface Design, sekaligus bagaimana desain tersebut dapat diterapkan ke produk digital yang nyata.
+      </p>
+    </div>
+  </section>
+
+  <!-- Next Project Navigation -->
+  <footer class="reveal flex flex-col sm:flex-row justify-between items-center gap-6 pt-8">
+    <a href="index.html#works" class="px-8 py-4 border border-on-surface text-on-surface text-label-caps font-label-caps uppercase tracking-wider hover:bg-on-surface hover:text-on-secondary transition-colors flex items-center gap-2">
+      <span class="material-symbols-outlined text-sm">arrow_back</span> Kembali ke Portofolio
+    </a>
+    <a href="index.html#works" class="px-8 py-4 bg-primary text-on-primary text-label-caps font-label-caps uppercase tracking-wider hover:bg-primary-container hover:text-on-surface transition-colors flex items-center gap-2">
+      Proyek Selanjutnya <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
